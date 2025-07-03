@@ -1,0 +1,103 @@
+/* Reset and body background setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("/static/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper to center the card */
+.center-wrapper {
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Main glassmorphism card */
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading style */
+.glass-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* File input style */
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Predict button style */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e7e34;
+}
+
+/* Result box */
+.result {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #eaffea;
+  font-size: 14px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image in result box */
+.result img {
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .glass-box {
+    padding: 25px 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .result img {
+    width: 100%;
+  }
+}

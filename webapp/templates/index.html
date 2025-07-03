@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🍎 Apple Leaf Disease Detector</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="center-wrapper">
+    <div class="glass-box">
+      <h1>🍃 Apple Leaf Disease Detector</h1>
+      <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required />
+        <button type="submit">Predict</button>
+      </form>
+
+      {% if disease %}
+      <div class="result">
+        <h2>Disease: {{ disease }}</h2>
+        <p>Confidence: {{ confidence }}%</p>
+        <img src="{{ path }}" alt="Predicted Leaf" />
+        <p><strong>Description:</strong> {{ data.description }}</p>
+        {% if data.fungicides %}
+          <p><strong>Fungicides:</strong> {{ data.fungicides | join(', ') }}</p>
+          <p><strong>Application:</strong> {{ data.application }}</p>
+          <p><strong>Safety:</strong> {{ data.safety }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "Apple_black_rot": {
+    "description": "Remove infected leaves and fruit.",
+    "fungicides": ["Captan", "Topsin-M"],
+    "application": "Mix 2g/liter. Spray every 7 days.",
+    "safety": "Wear gloves and avoid windy conditions."
+  },
+  "Apple_cedar_rust": {
+    "description": "Use rust-resistant varieties.",
+    "fungicides": ["Mancozeb", "Myclobutanil"],
+    "application": "Spray every 10 days in spring.",
+    "safety": "Avoid eye contact. Spray in morning."
+  },
+  "Apple_scab": {
+    "description": "Destroy fallen leaves.",
+    "fungicides": ["Captan", "Chlorothalonil"],
+    "application": "Spray every 7–10 days in humidity.",
+    "safety": "Wear mask and avoid inhalation."
+  },
+  "Healthy": {
+    "description": "Your leaf looks healthy!",
+    "fungicides": [],
+    "application": "No treatment needed.",
+    "safety": "Keep monitoring and regular care."
+  }
+}
